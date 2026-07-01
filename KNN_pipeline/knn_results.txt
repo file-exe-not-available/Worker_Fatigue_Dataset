@@ -1,0 +1,37 @@
+Feature matrix: 50400 samples × 57 features
+Running k-sensitivity sweep (k = 1 … 21, odd values) …
+  Best k in sweep: 1  (mean macro-F1 = 0.305)
+  Saved: figures\knn_k_sensitivity.png
+Tuning KNN hyperparameters (GroupKFold 5-fold, 20 iterations) …
+  Best params : {'weights': 'distance', 'n_neighbors': 13, 'metric': 'manhattan'}
+  Best CV F1  : 0.315
+
+Running LOSO CV (14 folds) …
+  Sub01: macro-F1 = 0.280  (n=4000)
+  Sub02: macro-F1 = 0.237  (n=4000)
+  Sub03: macro-F1 = 0.264  (n=2300)
+  Sub04: macro-F1 = 0.283  (n=3900)
+  Sub05: macro-F1 = 0.473  (n=3900)
+  Sub06: macro-F1 = 0.335  (n=3200)
+  Sub07: macro-F1 = 0.095  (n=3600)
+  Sub08: macro-F1 = 0.421  (n=3900)
+  Sub09: macro-F1 = 0.336  (n=3900)
+  Sub10: macro-F1 = 0.472  (n=3800)
+  Sub13: macro-F1 = 0.248  (n=3100)
+  Sub15: macro-F1 = 0.361  (n=3600)
+  Sub16: macro-F1 = 0.175  (n=3200)
+  Sub17: macro-F1 = 0.269  (n=4000)
+
+=== KNN — LOSO Results ===
+              precision    recall  f1-score   support
+
+         Low       0.65      0.82      0.72     31400
+    Moderate       0.21      0.14      0.17     10700
+        High       0.20      0.10      0.13      8300
+
+    accuracy                           0.55     50400
+   macro avg       0.35      0.35      0.34     50400
+weighted avg       0.48      0.55      0.51     50400
+
+Overall macro-F1 : 0.341
+Overall accuracy : 0.554

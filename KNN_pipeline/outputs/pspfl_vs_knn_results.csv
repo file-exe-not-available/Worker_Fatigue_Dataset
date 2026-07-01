@@ -1,0 +1,23 @@
+recipe,model,learner,ratio,k,macro_f1,accuracy,family
+acc+gyro|all|+anthro,PSPFL (svm) r=0.0,svm,0.0,,0.7214683408294521,0.7803220567483573,PSPFL
+acc+gyro|all|+anthro,PSPFL (logistic) r=0.0,logistic,0.0,,0.7166968743987833,0.7811067326632529,PSPFL
+acc+gyro|all|+anthro,KNN (centralized),knn,,5.0,0.7155062350615179,0.7882667241844807,KNN (centralized)
+acc+gyro|all|+anthro,PSPFL (svm) r=0.1,svm,0.1,,0.6922846382369291,0.7742031058500761,PSPFL
+acc+gyro|all|+anthro,PSPFL (logistic) r=0.1,logistic,0.1,,0.6616612837131821,0.7586199660456048,PSPFL
+acc+gyro|all|+anthro,PSPFL (logistic) r=0.3,logistic,0.3,,0.3999071076020159,0.6080936566561056,PSPFL
+acc+gyro|all|+anthro,PSPFL (svm) r=0.3,svm,0.3,,0.395867947517583,0.6057160182106962,PSPFL
+acc+gyro|all|+anthro,PSPFL (svm) r=0.5,svm,0.5,,0.3617222981915349,0.5945410300803109,PSPFL
+acc+gyro|all|+anthro,PSPFL (logistic) r=0.5,logistic,0.5,,0.3617222981915349,0.5945410300803109,PSPFL
+acc+gyro|all|+anthro,FedAvg (logistic),logistic,,,0.34730704673636,0.5764791451321569,FedAvg
+acc+gyro|all|+anthro,FedAvg (svm),svm,,,0.3471294338302631,0.5748087358681276,FedAvg
+acc+gyro|mean|+anthro,KNN (centralized),knn,,11.0,0.6423213301529761,0.7433412902104448,KNN (centralized)
+acc+gyro|mean|+anthro,PSPFL (svm) r=0.0,svm,0.0,,0.5974381375526608,0.6996676518936908,PSPFL
+acc+gyro|mean|+anthro,PSPFL (logistic) r=0.0,logistic,0.0,,0.5853915888148105,0.6967197218970237,PSPFL
+acc+gyro|mean|+anthro,PSPFL (logistic) r=0.1,logistic,0.1,,0.5772841169910813,0.6931436762299771,PSPFL
+acc+gyro|mean|+anthro,PSPFL (svm) r=0.1,svm,0.1,,0.5579307671810064,0.678533333699474,PSPFL
+acc+gyro|mean|+anthro,PSPFL (svm) r=0.3,svm,0.3,,0.45383348047457656,0.6311773301345563,PSPFL
+acc+gyro|mean|+anthro,PSPFL (logistic) r=0.3,logistic,0.3,,0.44359343520629263,0.6277632485020217,PSPFL
+acc+gyro|mean|+anthro,PSPFL (svm) r=0.5,svm,0.5,,0.36476436530475775,0.5941654160481075,PSPFL
+acc+gyro|mean|+anthro,FedAvg (logistic),logistic,,,0.36409635917035876,0.5915397593808528,FedAvg
+acc+gyro|mean|+anthro,FedAvg (svm),svm,,,0.3638082199727553,0.5909606088017022,FedAvg
+acc+gyro|mean|+anthro,PSPFL (logistic) r=0.5,logistic,0.5,,0.3618605331849375,0.5936905963425186,PSPFL
